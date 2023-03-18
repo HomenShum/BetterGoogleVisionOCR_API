@@ -1,3 +1,10 @@
+TO USE: 
+1. CLICK THE GREEN CODE BUTTON
+2. DOWNLOAD THE ZIP FILE, EXTRACT TO A FOLDER
+3. USE VS CODE TO OPEN THE FILE FOLDER 
+4. OPEN UP A TERMINAL -> type: pip install -r requirements.txt
+5. Follow the instructions on the top of each python file, start with Batch then the PDFtextout python file.
+
 # OCRTools
 Resolves the issue where on the stackoverflow and google vision documentation some of their OCR usage codes don't work
 
