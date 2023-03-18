@@ -5,9 +5,9 @@ Original Google Vision API Documentation
 - Intended to: Display the full text from the first page of a pdf that has been stored in a google cloud storage's bucket
 - Problem is there are no further documentation guidance for new developers to use this tool effectively.
 BetterGoogleVisionOCR_API solves for: 
-1. What if I wanted to display multiple pages' texts ?
-2. What if some pages don't have a text which would show error text on code -> annotation = first_page_response['fullTextAnnotation'] ?
-3. What if I don't know where I should input the google cloud storage uri ? 
+1. What if I wanted to display multiple pages of text but the original documentation don't have instruction for it ?
+2. What if some pages don't have any texts -> which would result in keyError: annotation = first_page_response['fullTextAnnotation'] ?
+3. What if I don't know where I should input the google cloud storage uri within the code for the original documentataion ? 
 
 --- Solutions that I provide ---
 INSTRUCTION STEPS:
