@@ -13,7 +13,7 @@ Two Python commands turn a PDF stored in Google Cloud Storage into one local JSO
 
 ## Install
 
-Use Python 3.10 or later. Local verification used Python 3.11 on Windows; other versions and operating systems have not been exercised here.
+Use Python 3.10 or later. Local verification used Python 3.11 on Windows. The workflow below is configured for Python 3.11 on Ubuntu 24.04; this is not coverage of every Python version or operating system.
 
 ~~~powershell
 git clone https://github.com/HomenShum/BetterGoogleVisionOCR_API.git
@@ -67,7 +67,7 @@ python -m unittest discover -s tests -v
 
 The standard-library tests run both actual scripts in isolated processes with fake Google SDKs and networking blocked. They cover explicit PDF selection, preserved authentication, fresh output folders, page ordering, Unicode and blank pages, help and invalid inputs, provider failures, six concurrent isolated exports, and ten repeated exports.
 
-These tests prove the local command and output contract. They do not call Google, measure OCR quality, validate a user's permissions, certify large or malicious cloud payload handling, or prove a production deployment. There is no CI workflow in this repository at this revision.
+These tests prove the local command and output contract. They do not call Google, measure OCR quality, validate a user's permissions, certify large or malicious cloud payload handling, or prove a production deployment. The [offline verification workflow](.github/workflows/verify.yml) installs the dependencies, checks imports and help, and runs this suite on pull requests and main pushes without Google credentials or OCR calls. Read its result at the exact commit before claiming CI passed.
 
 ## Troubleshooting and handoff
 

@@ -11,3 +11,7 @@ Replace source-editing instructions and the embedded Google sample with two expl
 **Commit:** this change; use `git log --follow -- README.md` to resolve its commit. **Author:** Codex.
 
 **Touches:** [scripts/batch-extract.md](../scripts/batch-extract.md), [scripts/pdf-textout.md](../scripts/pdf-textout.md), [dependencies/requirements.md](../dependencies/requirements.md), [tests/workflow.md](../tests/workflow.md).
+
+## 2026-10-15 — Link the configured offline CI workflow
+
+Replace the no-workflow statement with the actual check source and distinguish local Windows proof from the configured Ubuntu job. The runtime, requirements and offline scenarios are unchanged; exact-commit CI results are required before reporting a pass.
